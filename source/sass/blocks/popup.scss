@@ -49,48 +49,6 @@
   .popup {
     width: 320px;
     height: 568px;
-    // position: fixed;
-    // top: 20%;
-    // left: 50%;
-    // z-index: 3;
-    // margin: 0 auto;
     background-color: $background-white;
   }
-
-  .popup--open {
-    // display: block;
-  }
-
-  .popup__close {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // width: 60px;
-    // height: 60px;
-    // font-size: 0;
-    // border: none;
-    // background-color: transparent;
-    // cursor: pointer;
-
-    &::before,
-    &::after {
-      // position: absolute;
-      // content: "";
-      // top: 30px;
-      // left: 15px;
-      // width: 27px;
-      // height: 1px;
-      // background-color: $darkest-color;
-      // opacity: 0.2;
-    }
-
-    &::before {
-      // transform: rotate(45deg);
-    }
-
-    &::after {
-      // transform: rotate(-45deg);
-    }
-  }
 }
-

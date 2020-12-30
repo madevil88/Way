@@ -17,22 +17,17 @@
 .feedback__wrapper {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   width: 635px;
   padding: 50px;
   padding-top: 40px;
   padding-left: 70px;
   color: $darkest-color;
-  // padding-bottom: 0;
   background-color: $background-white;
 }
 
 .feedback__title {
   margin: 0;
-  // padding-bottom: 15px;
-
-  // margin-top: 15px;
   font-size: 25px;
   font-weight: 600;
   line-height: 55px;
@@ -111,12 +106,8 @@
   border: 1px solid $accent-main-color;
 }
 
-.feedback__item
-input:invalid:not(:placeholder-shown)
-~ .feedback__error-input-phone,
-.feedback__item
-input:invalid:not(:placeholder-shown)
-~ .feedback__error-input-email {
+.feedback__item input:invalid:not(:placeholder-shown) ~ .feedback__error-input-phone,
+.feedback__item input:invalid:not(:placeholder-shown) ~ .feedback__error-input-email {
   display: inline-block;
 }
 
@@ -130,15 +121,10 @@ input:invalid:not(:placeholder-shown)
 
 @media screen and (max-width: $desktop-width - 1px) {
   .feedback {
-    // display: flex;
     justify-content: center;
-    // align-items: center;
     min-height: 456px;
     margin-bottom: 5px;
     background-image: url("../img/background-bottom-page-tablet@1x.jpg");
-    // background-repeat: no-repeat, no-repeat;
-    // background-position: 7%;
-    // background-size: 72%;
     background-position: 0 0;
     background-size: 100% auto;
 
@@ -148,85 +134,23 @@ input:invalid:not(:placeholder-shown)
   }
 
   .feedback__wrapper {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     width: 658px;
-    // padding: 50px;
     padding-top: 38px;
     padding-bottom: 52px;
     padding-left: 50px;
-    // color: $darkest-color;
-    // background-color: $background-white;
     border-radius: 5px;
   }
 
-  .feedback__title {
-    // margin: 0;
-    // font-size: 25px;
-    // font-weight: 600;
-    // line-height: 55px;
-    // letter-spacing: 0.8px;
-  }
-
   .feedback__description {
-    // margin: 0;
-    // padding-bottom: 22px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 24px;
     letter-spacing: 0.9px;
   }
 
-  .feedback__form {
-    // font-size: 14px;
-    // font-weight: 400;
-    // line-height: 17px;
-    // letter-spacing: 1px;
-  }
-
   .feedback__list {
-    // @include reset-list-style;
-    // position: relative;
-    // display: flex;
-    // justify-content: space-between;
     margin-bottom: 23px;
-    // width: 557px;
-
-    &::before {
-      // @include pseudo-clases;
-      // content: "*";
-      // font-size: 16px;
-      // top: 9px;
-      // left: 15px;
-      // color: $accent-main-color;
-    }
   }
-
-  .feedback__item input {
-  // width: 269px;
-  // min-height: 50px;
-  // padding-left: 10px;
-}
-
-.feedback__item input[name="phone"] {
-  // padding-left: 22px;
-}
-
-.feedback__item input::placeholder {
-  // letter-spacing: 1.3px;
-  // color: $darkest-color;
-}
-
-.feedback__item input[name="phone"]::placeholder {
-
-}
 
   .feedback__button {
-    // margin: 0 auto;
     width: 250px;
-    // padding-top: 18px;
-    // padding-bottom: 17px;
     padding-left: 84px;
     font-size: 10px;
     font-weight: 500;
@@ -237,118 +161,47 @@ input:invalid:not(:placeholder-shown)
 
 @media screen and (max-width: $tablet-width - 1) {
   .feedback {
-    // display: flex;
     justify-content: flex-start;
-    // // align-items: center;
     flex-direction: column;
-    // min-height: 456px;
-    // margin-bottom: 80px;
     background-image: none;
-    // // background-repeat: no-repeat, no-repeat;
-    // // background-position: 7%;
-    // // background-size: 72%;
-    // background-position: 0 0;
-    // background-size: 100% auto;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      // background-image: url("../img/background-bottom-page-tablet@2x.jpg");
-    }
   }
 
   .feedback__wrapper {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     width: 92%;
     padding: 0;
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 0;
-    // // color: $darkest-color;
-    // // background-color: $background-white;
-    // border-radius: 5px;
   }
 
   .feedback__title {
-    // margin: 0;
     margin-bottom: 18px;
-    // font-size: 25px;
-    // font-weight: 600;
     line-height: 33px;
-    // letter-spacing: 0.8px;
     text-align: center;
   }
 
   .feedback__description {
-    // margin: 0;
     padding-bottom: 19px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 24px;
-    // letter-spacing: 0.9px;
     text-align: center;
   }
 
-  .feedback__form {
-    // font-size: 14px;
-    // font-weight: 400;
-    // line-height: 17px;
-    // letter-spacing: 1px;
-  }
-
   .feedback__list {
-    // @include reset-list-style;
-    // position: relative;
-    // display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     margin-bottom: 0;
     width: 288px;
-
-    &::before {
-      // @include pseudo-clases;
-      // content: "*";
-      // font-size: 16px;
-      // top: 9px;
-      // left: 15px;
-      // color: $accent-main-color;
-    }
   }
 
   .feedback__item input {
     margin-bottom: 20px;
     width: 100%;
-    // min-height: 50px;
-    // padding-left: 10px;
-  }
-
-  .feedback__item input[name="phone"] {
-    // padding-left: 22px;
-  }
-
-  .feedback__item input::placeholder {
-    // letter-spacing: 1.3px;
-    // color: $darkest-color;
-  }
-
-  .feedback__item input[name="phone"]::placeholder {
-
   }
 
   .feedback__button {
-    // margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 50px;
-    // padding-top: 0;
-    // padding-bottom: 0;
-    // padding-left: 0;
     padding: 0;
-    // font-size: 10px;
-    // font-weight: 500;
-    // line-height: 12px;
-    // letter-spacing: 2.5px;
   }
 }

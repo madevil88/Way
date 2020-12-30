@@ -116,7 +116,7 @@
   letter-spacing: 1.5px;
 }
 
-.price-list__tariff-plan--econom  .price-list__tariff-name {
+.price-list__tariff-plan--econom .price-list__tariff-name {
   letter-spacing: 0.5px;
 }
 
@@ -209,18 +209,12 @@
 
 @media screen and (max-width: $desktop-width - 1px) {
   .price-list {
-    // display: flex;
-    // flex-direction: column;
     justify-content: center;
-    // flex-wrap: wrap;
     margin-bottom: 125px;
     padding-left: 0;
-    // color: $dark-color;
   }
 
   .price-list__wrapper {
-    // display: flex;
-    // flex-direction: column;
     align-items: center;
     margin-top: 81px;
     margin-left: 0;
@@ -231,115 +225,59 @@
   }
 
   .price-list__title {
-    // position: relative;
-    // margin: 0;
     padding-bottom: 0;
     font-size: 30px;
-    // font-weight: 600;
     line-height: 45px;
     letter-spacing: 1.5px;
     text-align: center;
 
     &::after {
       display: none;
-      // @include pseudo-clases;
-      // width: 175px;
-      // height: 4px;
-      // left: 0;
-      // bottom: 0;
-      // background-color: $accent-main-color;
     }
   }
 
   .price-list__descripton {
     margin-top: 19px;
     margin-bottom: 16px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 27px;
-    // letter-spacing: 1px;
     text-align: center;
   }
 
   .price-list__contact {
-    // display: flex;
-    // flex-direction: column;
     align-items: center;
     width: 194px;
     margin-left: 0;
     font-size: 18px;
-    // font-weight: 500;
-    // line-height: 34px;
-    // letter-spacing: 1.5px;
-    // color: $darkest-color;
   }
 
   .price-list__phone {
-    // @include reset-link-style;
-    // position: relative;
     margin-top: 9px;
     font-size: 18px;
-    // font-weight: 400;
-    // line-height: 32px;
-    // letter-spacing: 0;
     color: $accent-main-color;
 
     &::before {
       display: none;
-      // @include pseudo-clases;
-      // width: 30px;
-      // height: 30px;
-      // top: 0;
-      // left: -50px;
-      // background-image: url("../img/icon-small-red-phone.svg");
     }
   }
 
   .price-list__tariff-plan {
-    // display: flex;
-    // flex-direction: column;
     align-items: center;
     margin-right: 50px;
     width: 288px;
     padding: 0;
-    // padding-top: 37px;
-    // border: 1px solid $dark-color-30opacity;
-    // border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  .price-list__tariff-plan--complex {
-    // border: 3px solid $accent-main-color;
-  }
-
   .price-list__tariff-plan--econom {
     margin-right: 0;
-    // width: 370px;
-  }
-
-  .price-list__tariff-plan--econom .price-list__tariff-title {
-    // padding-top: 4px;
-    // color: $dark-color;
-    // opacity: 0.7;
   }
 
   .price-list__tariff-title {
-    // display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
-    // margin: 0;
     margin-bottom: 10px;
     margin-top: 29px;
     font-size: 24px;
-    // font-weight: 600;
-    // line-height: 34px;
-    // color: $accent-main-color;
-  }
-
-  .price-list__tariff-name {
-    // letter-spacing: 1.5px;
   }
 
   .price-list__tariff-price {
@@ -347,61 +285,30 @@
     letter-spacing: 1px;
   }
 
-  .price-list__tariff-plan--econom  .price-list__tariff-price {
+  .price-list__tariff-plan--econom .price-list__tariff-price {
     margin-left: -8px;
-    // letter-spacing: 0.5px;
   }
 
-
-
   .price-list__tariff-description {
-    // position: relative;
     margin: 0;
     width: 248px;
     padding-bottom: 7px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 25px;
-    // letter-spacing: 1.1px;
     text-align: center;
 
     &::after {
-      // @include pseudo-clases;
       width: 248px;
-      // height: 1px;
-      // left: 0;
-      // bottom: 0;
-      // background-color: $accent-main-color;
     }
   }
 
-  .price-list__tariff-plan--econom .price-list__tariff-description::after {
-    // background-color: $dark-color-30opacity;
-  }
-
   .price-list__tariff-advantages {
-    // @include reset-list-style;
-
-    // margin-bottom: auto;
     width: 248px;
-    // padding-left: 30px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 32px;
-    // letter-spacing: 1px;
   }
 
   .price-list__tariff-advantage {
-    // position: relative;
     padding-top: 21px;
 
     &::before {
-      // @include pseudo-clases;
-      // width: 22px;
-      // height: 22px;
       top: 27px;
-      // left: -30px;
-      // background-image: url("../img/icon-check-black-mark.svg");
     }
   }
 
@@ -429,266 +336,43 @@
     padding-top: 11px;
 
     &::before {
-      // @include pseudo-clases;
-      // width: 14px;
-      // height: 14px;
       top: 21px;
-      // background-image: url("../img/icon-check-red-mark.svg");
     }
   }
 
   .price-list__button {
     margin-top: 28px;
     width: 100%;
-    // padding-left: 34px;
     padding-top: 20px;
     padding-bottom: 14px;
-    // justify-content: center;
     letter-spacing: 0.7px;
   }
 }
 
 @media screen and (max-width: $tablet-width - 1) {
   .price-list {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
     align-items: center;
-    // flex-wrap: wrap;
     margin-bottom: 69px;
-    // padding-left: 0;
-    // color: $dark-color;
   }
 
   .price-list__wrapper {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     margin-top: 59px;
-    // margin-left: 0;
-    // margin-right: 0;
     margin-bottom: 21px;
     width: 285px;
-    // order: 0;
   }
 
   .price-list__title {
-    // position: relative;
-    // margin: 0;
-    // padding-bottom: 0;
     font-size: 24px;
-    // font-weight: 600;
     line-height: 36px;
-    // letter-spacing: 1.5px;
-    // text-align: center;
-
-    &::after {
-      // display: none;
-      // @include pseudo-clases;
-      // width: 175px;
-      // height: 4px;
-      // left: 0;
-      // bottom: 0;
-      // background-color: $accent-main-color;
-    }
-  }
-
-  .price-list__descripton {
-    // margin-top: 19px;
-    // margin-bottom: 16px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 27px;
-    // letter-spacing: 1px;
-    // text-align: center;
   }
 
   .price-list__contact {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // width: 194px;
-    // margin-left: 0;
     margin-top: 4px;
-    // font-size: 18px;
-    // font-weight: 500;
-    // line-height: 34px;
-    // letter-spacing: 1.5px;
-    // color: $darkest-color;
-  }
-
-  .price-list__phone {
-    // @include reset-link-style;
-    // position: relative;
-    // margin-top: 9px;
-    // font-size: 18px;
-    // font-weight: 400;
-    // line-height: 32px;
-    // letter-spacing: 0;
-    // color: $accent-main-color;
-
-    &::before {
-      // display: none;
-      // @include pseudo-clases;
-      // width: 30px;
-      // height: 30px;
-      // top: 0;
-      // left: -50px;
-      // background-image: url("../img/icon-small-red-phone.svg");
-    }
   }
 
   .price-list__tariff-plan {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     margin-right: 0;
     margin-bottom: 30px;
-    // width: 288px;
-    // padding: 0;
     padding-top: 0;
-    // border: 1px solid $dark-color-30opacity;
-    // border-radius: 5px;
-    // border-bottom-left-radius: 0;
-    // border-bottom-right-radius: 0;
-  }
-
-  .price-list__tariff-plan--complex {
-    // border: 3px solid $accent-main-color;
-  }
-
-  .price-list__tariff-plan--econom {
-    // margin-right: 0;
-    // width: 370px;
-  }
-
-  .price-list__tariff-plan--econom .price-list__tariff-title {
-    // padding-top: 4px;
-    // color: $dark-color;
-    // opacity: 0.7;
-  }
-
-  .price-list__tariff-title {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
-    // margin: 0;
-    // margin-bottom: 10px;
-    // margin-top: 29px;
-    // font-size: 24px;
-    // font-weight: 600;
-    // line-height: 34px;
-    // color: $accent-main-color;
-  }
-
-  .price-list__tariff-name {
-    // letter-spacing: 1.5px;
-  }
-
-  .price-list__tariff-price {
-    // margin-top: 10px;
-    // letter-spacing: 1px;
-  }
-
-  .price-list__tariff-plan--econom  .price-list__tariff-price {
-    // margin-left: -8px;
-    // letter-spacing: 0.5px;
-  }
-
-
-
-  .price-list__tariff-description {
-    // position: relative;
-    // margin: 0;
-    // width: 248px;
-    // padding-bottom: 7px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 25px;
-    // letter-spacing: 1.1px;
-    // text-align: center;
-
-    &::after {
-      // @include pseudo-clases;
-      // width: 248px;
-      // height: 1px;
-      // left: 0;
-      // bottom: 0;
-      // background-color: $accent-main-color;
-    }
-  }
-
-  .price-list__tariff-plan--econom .price-list__tariff-description::after {
-    // background-color: $dark-color-30opacity;
-  }
-
-  .price-list__tariff-advantages {
-    // @include reset-list-style;
-
-    // margin-bottom: auto;
-    // width: 248px;
-    // padding-left: 30px;
-    // font-size: 16px;
-    // font-weight: 400;
-    // line-height: 32px;
-    // letter-spacing: 1px;
-  }
-
-  .price-list__tariff-advantage {
-    // position: relative;
-    // padding-top: 21px;
-
-    &::before {
-      // @include pseudo-clases;
-      // width: 22px;
-      // height: 22px;
-      // top: 27px;
-      // left: -30px;
-      // background-image: url("../img/icon-check-black-mark.svg");
-    }
-  }
-
-  .price-list__tariff-plan--complex .price-list__tariff-advantage:nth-child(3) {
-    // padding-top: 7px;
-
-    &::before {
-      // top: 11px;
-    }
-  }
-
-  .price-list__tariff-plan--complex .price-list__tariff-advantage:last-child {
-    // padding-top: 7px;
-
-    &::before {
-      // top: 15px;
-    }
-  }
-
-  .price-list__tariff-plan--econom .price-list__tariff-advantages {
-    // margin-top: 7px;
-  }
-
-  .price-list__tariff-plan--econom .price-list__tariff-advantage {
-    // padding-top: 11px;
-
-    &::before {
-      // @include pseudo-clases;
-      // width: 14px;
-      // height: 14px;
-      // top: 21px;
-      // background-image: url("../img/icon-check-red-mark.svg");
-    }
-  }
-
-  .price-list__button {
-    // margin-top: 28px;
-    // width: 100%;
-    // // padding-left: 34px;
-    // padding-top: 20px;
-    // padding-bottom: 14px;
-    // // justify-content: center;
-    // letter-spacing: 0.7px;
   }
 }
-

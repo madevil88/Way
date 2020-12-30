@@ -89,6 +89,7 @@
   }
 
   .page-header__main-nav {
+    position: relative;
     margin: 0;
   }
 
@@ -96,7 +97,7 @@
     @include reset-button-style;
     position: absolute;
     display: block;
-    top: 0;
+    top: -18px;
     right: 0;
     width: 72px;
     height: 50px;
@@ -140,7 +141,16 @@
 
   .page-header__main-nav--nojs .page-header__site-menu {
     display: flex;
+  }
 
+  .page-header__main-nav--closed .page-header__site-menu {
+    position: absolute;
+    display: flex;
+    top: -81px;
+    right: 0;
+    min-height: 568px;
+    padding-top: 81px;
+    z-index: 5;
   }
 
   .page-header__site-menu-item {
