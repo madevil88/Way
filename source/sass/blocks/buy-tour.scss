@@ -1,0 +1,242 @@
+.buy-tour {
+  display: none;
+  align-items: center;
+  margin-left: -388px;
+}
+
+.buy-tour--open {
+  display: flex;
+}
+
+.buy-tour__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+  color: $darkest-color;
+}
+
+.buy-tour__title {
+  margin: 0;
+  padding-bottom: 44px;
+  margin-top: 27px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 0.8px;
+}
+
+.buy-tour__form {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 1px;
+}
+
+.buy-tour__list {
+  @include reset-list-style;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    @include pseudo-clases;
+    content: "*";
+    font-size: 16px;
+    top: 9px;
+    left: 15px;
+    color: $accent-main-color;
+  }
+}
+
+.buy-tour__item {
+  padding-bottom: 20px;
+}
+
+.buy-tour__error-input-phone,
+.buy-tour__error-input-email {
+  position: absolute;
+  display: none;
+  top: -17px;
+  left: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: $accent-main-color;
+}
+
+.buy-tour__error-input-email {
+  top: 52px;
+  left: 3px;
+}
+
+.buy-tour__item input {
+  width: 270px;
+  min-height: 50px;
+  padding-left: 10px;
+  border: 1px solid #d7d9df;
+}
+
+.buy-tour__item input[name="buy-tour-phone"] {
+  padding-left: 22px;
+}
+
+.buy-tour__item input::placeholder {
+  letter-spacing: 1.3px;
+  color: $darkest-color;
+}
+
+.buy-tour__item input:invalid:not(:placeholder-shown) {
+  background-color: $background-white;
+  border: 1px solid $accent-main-color;
+}
+
+.buy-tour__item
+input:invalid:not(:placeholder-shown)
+~ .buy-tour__error-input-phone,
+.buy-tour__item
+input:invalid:not(:placeholder-shown)
+~ .buy-tour__error-input-email {
+  display: inline-block;
+}
+
+.buy-tour__button {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  width: 176px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+
+@media screen and (max-width: $desktop-width - 1px) {
+  .buy-tour {
+    // display: none;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: -242px;
+    // min-height: 568px;
+  }
+
+  .buy-tour__image {
+    display: none;
+  }
+
+  .buy-tour--open {
+    // display: flex;
+  }
+
+  .buy-tour__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: flex-start;
+    margin-top: 94px;
+    width: 320px;
+    // color: $darkest-color;
+  }
+
+  .buy-tour__title {
+    // margin: 0;
+    // padding-bottom: 44px;
+    margin-top: 0px;
+    // font-size: 25px;
+    // font-weight: 600;
+    // line-height: 55px;
+    // letter-spacing: 0.8px;
+  }
+
+  .buy-tour__form {
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 17px;
+    // letter-spacing: 1px;
+  }
+
+  .buy-tour__list {
+    // @include reset-list-style;
+    // position: relative;
+    // display: flex;
+    // flex-direction: column;
+
+    &::before {
+      // @include pseudo-clases;
+      // content: "*";
+      // font-size: 16px;
+      // top: 9px;
+      // left: 15px;
+      // color: $accent-main-color;
+    }
+  }
+
+  .buy-tour__item {
+    // padding-bottom: 20px;
+  }
+
+  .buy-tour__error-input-phone,
+  .buy-tour__error-input-email {
+    // position: absolute;
+    // display: none;
+    // top: -17px;
+    // left: 2px;
+    // font-size: 12px;
+    // font-weight: 400;
+    // line-height: 15px;
+    // letter-spacing: 1px;
+    // color: $accent-main-color;
+  }
+
+  .buy-tour__error-input-email {
+    // top: 52px;
+    // left: 3px;
+  }
+
+  .buy-tour__item input {
+    width: 288px;
+    // min-height: 50px;
+    padding-left: 14px;
+    // border: 1px solid #d7d9df;
+  }
+
+  .buy-tour__item input[name="phone"] {
+    padding-left: 24px;
+  }
+
+  .buy-tour__item input::placeholder {
+    // letter-spacing: 1.3px;
+    // color: $darkest-color;
+  }
+
+  .buy-tour__item input:invalid:not(:placeholder-shown) {
+    // background-color: $background-white;
+    // border: 1px solid $accent-main-color;
+  }
+
+  .buy-tour__item
+  input:invalid:not(:placeholder-shown)
+  ~ .buy-tour__error-input-phone,
+  .buy-tour__item
+  input:invalid:not(:placeholder-shown)
+  ~ .buy-tour__error-input-email {
+    // display: inline-block;
+  }
+
+  .buy-tour__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 0;
+    // margin: 0 auto;
+    // margin-bottom: 48px;
+    width: 288px;
+    // padding-top: 18px;
+    // padding-bottom: 17px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 2.2px;
+  }
+}
+

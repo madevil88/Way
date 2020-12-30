@@ -1,14 +1,16 @@
+$mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1024px;
+$desktop-max-content-width: 1170px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
-$background-green: #68b738;
-$background-grey: #f2f3f3;
+$accent-main-color: #fe7865;
+$hover-accent-color: #f17d4b;
+$darkest-color: #141517;
+$dark-color: #2c2e3f;
+$dark-color-30opacity: rgba(44, 46, 63, 0.3);
+$background-grey: #FBF8F8;
 $background-white: #ffffff;
-$border-color-block: #ededed;
-$border-color-input: #cdcdcd;
-$font-black: #111111;
-$font-medium-black: #222222;
-$font-grey: #444444;
+$background-defoult-color: #69a5cf;
 $font-white: #ffffff;

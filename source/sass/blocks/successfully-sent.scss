@@ -1,0 +1,32 @@
+.successfully-sent {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: -388px;
+}
+
+.successfully-sent--open {
+  display: flex;
+}
+
+.successfully-sent__text {
+  margin-left: 11px;
+  width: 400px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 2.5px;
+  word-spacing: -2px;
+  text-align: center;
+}
+
+@media screen and (max-width: $desktop-width - 1px) {
+  .successfully-sent {
+    margin-left: -242px;
+  }
+
+  .successfully-sent__text {
+    font-size: 20px;
+  }
+}
+

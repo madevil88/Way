@@ -1,0 +1,437 @@
+.slider {
+  margin-top: -3px;
+
+}
+
+.slider__tabs {
+  @include reset-list-style;
+  width: 905px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  color: $dark-color-30opacity;
+  border-bottom: 1px solid $dark-color-30opacity;
+
+  // outline: 1px solid red;
+}
+
+.slider__tab {
+  padding-bottom: 13px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+.slider__tab--active {
+  color: $accent-main-color;
+}
+
+.slider__tab:last-child {
+  padding-right: 0;
+}
+
+.slider__tab a {
+  @include reset-link-style;
+}
+
+.slider__articles {
+  @include reset-list-style;
+}
+
+.slider__item {
+  position: relative;
+  align-items: center;
+  display: none;
+
+}
+
+.slider__item--active {
+  display: flex;
+}
+
+.slider__item-wrapper {
+  width: 367px;
+  padding-top: 11px;
+  color: $dark-color;
+}
+
+.slider__item-title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 36px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 2px;
+
+  &::after {
+    @include pseudo-clases;
+    width: 175px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background-color: $accent-main-color;
+  }
+}
+
+.slider__item-description {
+  margin-top: 30px;
+  margin-left: 2px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+  opacity: 0.7;
+}
+
+.slider__item-button {
+  margin-left: 3px;
+  width: 250px;
+}
+
+.slider__item-image {
+  margin-left: 102px;
+}
+
+.slider__item-reviews {
+  right: 0;
+}
+
+@media screen and (max-width: $desktop-width - 1px) {
+  .slider {
+    // margin-top: -3px;
+
+  }
+
+  .slider__tabs {
+    // @include reset-list-style;
+    // width: 905px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-left: 37px;
+    margin-bottom: 23px;
+    // color: $dark-color-30opacity;
+    // border-bottom: 1px solid $dark-color-30opacity;
+
+    // outline: 1px solid red;
+  }
+
+  .slider__tab {
+    // padding-bottom: 13px;
+    // font-size: 20px;
+    // font-weight: 500;
+    // line-height: 24px;
+    // letter-spacing: 1.5px;
+  }
+
+  .slider__tab--active {
+    // color: $accent-main-color;
+  }
+
+  .slider__tab:last-child {
+    // padding-right: 0px;
+  }
+
+  .slider__tab a {
+    // @include reset-link-style;
+  }
+
+  .slider__articles {
+    // @include reset-list-style;
+    // display: flex;
+
+  }
+
+  .slider__item {
+    // position: relative;
+    // align-items: center;
+    // display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    // background-color: $background-defoult-color;
+    background-repeat: no-repeat, no-repeat;
+    // background-position: 0% 91%;
+    background-position: 0 345px;
+    background-size: 100% auto;
+  }
+
+  .slider__item--active {
+    // display: flex;
+  }
+
+  .slider__item--greece {
+    background-image: url("../img/greece-detail-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/greece-detail-tablet@2x.jpg");
+    }
+  }
+
+  .slider__item--albania {
+    background-image: url("../img/albania-detail-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/albania-detail-tablet@2x.jpg");
+    }
+  }
+
+  .slider__item--montenegro {
+    background-image: url("../img/montenegro-detail-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/montenegro-detail-tablet@2x.jpg");
+    }
+  }
+
+  .slider__item--macedonia {
+    background-image: url("../img/macedonia-detail-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/macedonia-detail-tablet@2x.jpg");
+    }
+  }
+
+  .slider__item--croatia {
+    background-image: url("../img/croatia-detail-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/croatia-detail-tablet@2x.jpg");
+    }
+  }
+
+  .slider__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94.5%;
+    // padding-top: 11px;
+    // color: $dark-color;
+    margin-bottom: 110px;
+  }
+
+  .slider__item-title {
+    // position: relative;
+    // margin: 0;
+    padding-bottom: 0;
+    font-size: 30px;
+    // font-weight: 600;
+    line-height: 45px;
+    // letter-spacing: 2px;
+    text-align: center;
+
+    &::after {
+      display: none;
+      // @include pseudo-clases;
+      // width: 175px;
+      // height: 4px;
+      // left: 0;
+      // bottom: 0;
+      // background-color: $accent-main-color;
+    }
+  }
+
+  .slider__item-description {
+    margin-top: 21px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    // font-size: 16px;
+    // font-weight: 400;
+    // line-height: 28px;
+    // letter-spacing: 0.6px;
+    // opacity: 0.7;
+    text-align: center;
+  }
+
+  .slider__item-button {
+    margin-left: 0px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 53px;
+    // width: 250px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2.4px;
+  }
+
+  .slider__item-image {
+    display: none;
+    // margin-left: 102px;
+  }
+
+  .slider__item-reviews {
+    // right: 0;
+  }
+}
+
+@media screen and (max-width: $tablet-width - 1) {
+  .slider {
+    // margin-top: -3px;
+
+  }
+
+  .slider__tabs {
+    // @include reset-list-style;
+    // width: 905px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    margin-left: 15px;
+    // margin-bottom: 23px;
+    // color: $dark-color-30opacity;
+    // border-bottom: 1px solid $dark-color-30opacity;
+
+    // outline: 1px solid red;
+  }
+
+  .slider__tab {
+    // padding-bottom: 13px;
+    // font-size: 20px;
+    // font-weight: 500;
+    // line-height: 24px;
+    // letter-spacing: 1.5px;
+  }
+
+  .slider__tab--active {
+    // color: $accent-main-color;
+  }
+
+  .slider__tab:last-child {
+    // padding-right: 0px;
+  }
+
+  .slider__tab a {
+    // @include reset-link-style;
+  }
+
+  .slider__articles {
+    // @include reset-list-style;
+    // display: flex;
+
+  }
+
+  .slider__item {
+    // position: relative;
+    // align-items: center;
+    // display: none;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    // background-color: $background-defoult-color;
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: 0% 91%;
+    background-position: 100% 91.5%;
+    background-size: 100%;
+  }
+
+  .slider__item--active {
+    // display: flex;
+  }
+
+  .slider__item--greece {
+    background-image: url("../img/greece-detail-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/greece-detail-mobile@2x.jpg");
+    }
+  }
+
+  .slider__item--albania {
+    background-image: url("../img/albania-detail-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/albania-detail-mobile@2x.jpg");
+    }
+  }
+
+  .slider__item--montenegro {
+    background-image: url("../img/montenegro-detail-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/montenegro-detail-mobile@2x.jpg");
+    }
+  }
+
+  .slider__item--macedonia {
+    background-image: url("../img/macedonia-detail-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/macedonia-detail-mobile@2x.jpg");
+    }
+  }
+
+  .slider__item--croatia {
+    background-image: url("../img/croatia-detail-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/croatia-detail-mobile@2x.jpg");
+    }
+  }
+
+  .slider__item-wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    width: 90%;
+    padding-top: 2px;
+    // color: $dark-color;
+    // margin-bottom: 110px;
+  }
+
+  .slider__item-title {
+    // position: relative;
+    // margin: 0;
+    // padding-bottom: 0;
+    font-size: 24px;
+    // font-weight: 600;
+    line-height: 36px;
+    // letter-spacing: 2px;
+    // text-align: center;
+
+    &::after {
+      // display: none;
+      // @include pseudo-clases;
+      // width: 175px;
+      // height: 4px;
+      // left: 0;
+      // bottom: 0;
+      // background-color: $accent-main-color;
+    }
+  }
+
+  .slider__item-description {
+    // margin-top: 21px;
+    margin-left: 0;
+    margin-right: 0;
+    // margin-bottom: 20px;
+    // font-size: 16px;
+    // font-weight: 400;
+    // line-height: 28px;
+    // letter-spacing: 0.6px;
+    // opacity: 0.7;
+    // text-align: center;
+  }
+
+  .slider__item-button {
+    // margin-left: 0px;
+    // padding-top: 18px;
+    // padding-bottom: 17px;
+    padding-left: 72px;
+    width: 288px;
+    // font-size: 10px;
+    // font-weight: 500;
+    // letter-spacing: 2.4px;
+  }
+
+  .slider__item-image {
+    // display: none;
+    // margin-left: 102px;
+  }
+
+  .slider__item-reviews {
+    // right: 0;
+  }
+}
+

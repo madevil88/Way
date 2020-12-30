@@ -1,0 +1,209 @@
+.euro-trip {
+  display: flex;
+  min-height: 860px;
+  margin-bottom: 198px;
+  color: $font-white;
+  background-color: #ffffff;
+  background-image: url("../img/background-top-page-desktop@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/background-top-page-desktop@2x.jpg");
+  }
+}
+
+.euro-trip__wrapper {
+  width: 410px;
+  margin-top: 188px;
+  margin-left: 56.5%;
+}
+
+.euro-trip__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: 2px;
+}
+
+.euro-trip__second-part-title {
+  letter-spacing: 1px;
+}
+
+.euro-trip__description {
+  width: 370px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.4px;
+}
+
+.euro-trip__button {
+  position: relative;
+  width: 340px;
+
+  &::after {
+    @include pseudo-clases;
+    width: 14px;
+    height: 14px;
+    top: 30px;
+    right: 40px;
+    background-image: url("../img/icon-arrow.svg");
+  }
+}
+
+
+
+// @media (max-width: $tablet-width) {
+@media screen and (max-width: $desktop-width - 1px) {
+  .euro-trip {
+  // display: flex;
+  justify-content: center;
+  // align-items: center;
+  min-height: 344px;
+  margin-bottom: 55px;
+  // color: $font-white;
+  // background-color: #ffffff;
+    background-image: url("../img/background-top-page-tablet@1x.jpg");
+  // background-repeat: no-repeat, no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-top-page-tablet@2x.jpg");
+    }
+  }
+
+  .euro-trip__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
+    margin: 0;
+    margin-top: 61px;
+    margin-left: 0;
+  }
+
+  .euro-trip__title {
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 30px;
+    // font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .euro-trip__second-part-title {
+    // letter-spacing: 1px;
+  }
+
+  .euro-trip__description {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    // line-height: 27px;
+    // letter-spacing: 0.4px;
+    text-align: center;
+  }
+
+  .euro-trip__button {
+    // position: relative;
+    width: 250px;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 40px;
+    letter-spacing: 0.8px;
+
+    &::after {
+      // @include pseudo-clases;
+      // width: 14px;
+      // height: 14px;
+      top: 18px;
+      // right: 40px;
+      // background-image: url("../img/icon-arrow.svg");
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-width - 1) {
+  .euro-trip {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // min-height: 344px;
+    // margin-bottom: 55px;
+    // color: $font-white;
+    // background-color: #ffffff;
+    background-image: url("../img/background-top-page-mobile@1x.jpg");
+    // background-repeat: no-repeat, no-repeat;
+    // background-position: 0% 0%;
+    background-size: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/background-top-page-mobile@2x.jpg");
+    }
+  }
+
+  .euro-trip__wrapper {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // width: 410px;
+    // margin: 0;
+    // margin-top: 61px;
+    // margin-left: 0;
+  }
+
+  .euro-trip__title {
+    // margin: 0;
+    margin-bottom: 101px;
+    margin-top: 21px;
+    margin-left: 8px;
+
+    font-size: 24px;
+    // font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    // text-align: center;
+  }
+
+  .euro-trip__second-part-title {
+    // letter-spacing: 1px;
+  }
+
+  .euro-trip__description {
+    // margin: 0;
+    margin-bottom: 20px;
+    width: 290px;
+    // font-size: 16px;
+    // font-weight: 400;
+    // line-height: 27px;
+    // letter-spacing: 0.4px;
+    // text-align: center;
+    color: $darkest-color;
+  }
+
+  .euro-trip__button {
+    // position: relative;
+    width: 288px;
+    // padding-top: 18px;
+    // padding-bottom: 17px;
+    // padding-left: 40px;
+    // letter-spacing: 0.8px;
+
+    &::after {
+      // @include pseudo-clases;
+      // width: 14px;
+      // height: 14px;
+      // top: 18px;
+      // right: 40px;
+      // background-image: url("../img/icon-arrow.svg");
+    }
+  }
+}

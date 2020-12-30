@@ -1,0 +1,454 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1180px;
+  color: $darkest-color;
+}
+
+.page-footer__next-travel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 22px;
+}
+
+.page-footer__next-travel-title {
+  grid-column: 1/4;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.9px;
+}
+
+.page-footer__next-travel-list {
+  @include reset-list-style;
+  width: 130px;
+
+}
+
+.page-footer__next-travel-list:nth-child(3) {
+  width: 124px;
+}
+
+.page-footer__next-travel-item {
+  padding-bottom: 9px;
+  // width: 130px;
+}
+
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 91px;
+  margin-left: 3px;
+  border-left: 1px solid #d7d9df;
+}
+
+.page-footer__contacts-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.page-footer__contacts a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-left: 40px;
+  color: $accent-main-color;
+  text-decoration: underline;
+
+  &::before {
+    @include pseudo-clases;
+  }
+}
+
+.page-footer__contacts-email {
+  @include reset-link-style;
+  letter-spacing: -1.1px;
+
+  &::before {
+    top: 11px;
+    left: -1px;
+    width: 26px;
+    height: 20px;
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
+.page-footer__contacts-phone {
+  @include reset-link-style;
+
+  &::before {
+    top: 3px;
+    left: -1px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/icon-small-black-phone.svg");
+    opacity: 0.2;
+  }
+}
+
+.page-footer__corporate-travel {
+  width: 372px;
+  margin-left: 40px;
+  padding-left: 50px;
+  border-left: 1px solid #d7d9df;
+}
+
+.page-footer__corporate-travel-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+
+.page-footer__corporate-travel-description {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.9px;
+  opacity: 0.5;
+}
+
+.page-footer__corporate-travel-description:last-child {
+  width: 95%;
+}
+
+
+@media screen and (max-width: $desktop-width - 1px) {
+  .page-footer {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 22px;
+    // max-width: 1180px;
+    // color: $darkest-color;
+  }
+
+  .page-footer__next-travel {
+    // display: grid;
+    grid-template-columns: 33% 32% 33%;
+    padding-left: 0;
+    padding-right: 8px;
+  }
+
+  .page-footer__next-travel-title {
+    // grid-column: 1/4;
+    // margin: 0;
+    margin-bottom: 18px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 0.9px;
+  }
+
+  .page-footer__next-travel-list {
+    // @include reset-list-style;
+    // width: 130px;
+
+  }
+
+  .page-footer__next-travel-list:nth-child(3) {
+    // width: 124px;
+  }
+
+  .page-footer__next-travel-item {
+    // padding-bottom: 9px;
+  }
+
+  .page-footer__contacts {
+    position: relative;
+    // display: flex;
+    // flex-direction: column;
+    padding-left: 51px;
+    // margin-left: 3px;
+    border-left: none;
+
+    &::before {
+      @include pseudo-clases;
+      width: 1px;
+      height: 177px;
+      top: 0;
+      left: 0;
+      background-color: #d7d9df;
+    }
+  }
+
+  .page-footer__contacts-title {
+    // margin: 0;
+    // margin-bottom: 8px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 1px;
+  }
+
+  .page-footer__contacts a {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // min-height: 44px;
+    // padding-left: 40px;
+    // color: $accent-main-color;
+    // text-decoration: underline;
+
+    &::before {
+      // @include pseudo-clases;
+    }
+  }
+
+  .page-footer__contacts-email {
+    // @include reset-link-style;
+    // letter-spacing: -1.1px;
+
+    &::before {
+      // top: 11px;
+      // left: -1px;
+      // width: 26px;
+      // height: 20px;
+      // background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  .page-footer__contacts-phone {
+    // @include reset-link-style;
+
+    &::before {
+      // top: 3px;
+      // left: -1px;
+      // width: 30px;
+      // height: 30px;
+      // background-image: url("../img/icon-small-black-phone.svg");
+      // opacity: 0.2;
+    }
+  }
+
+  .page-footer__corporate-travel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 726px;
+    margin-left: 25px;
+    margin-top: 47px;
+    padding-left: 0;
+    border-left: none;
+
+    &::before {
+      @include pseudo-clases;
+      width: 726px;
+      height: 1px;
+      top: -30px;
+      left: -4px;
+      background-color: #d7d9df;
+    }
+  }
+
+  .page-footer__corporate-travel-title {
+    // margin: 0;
+    // margin-bottom: 20px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 1px;
+  }
+
+  .page-footer__corporate-travel-description {
+    // margin: 0;
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 24px;
+    // letter-spacing: 0.9px;
+    // opacity: 0.5;
+    text-align: center;
+  }
+
+  .page-footer__corporate-travel-description br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $tablet-width - 1) {
+  .page-footer {
+    // display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    margin-right: 0;
+    // max-width: 1180px;
+    // color: $darkest-color;
+  }
+
+  .page-footer__next-travel {
+    // display: grid;
+    // grid-template-columns: 33% 32% 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 92%;
+    // padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .page-footer__next-travel-title {
+    // grid-column: 1/4;
+    // margin: 0;
+    margin-right: 9px;
+    // margin-bottom: 18px;
+    // justify-self: center;
+
+    // margin-left: 19px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 0.9px;
+  }
+
+  .page-footer__next-travel-list {
+    // @include reset-list-style;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin-right: 77px;
+    margin-bottom: 6px;
+  }
+
+
+  .page-footer__next-travel-list:nth-child(3) {
+    margin-right: 14px;
+    width: auto;
+  }
+
+  .page-footer__next-travel-list:nth-child(4) {
+    margin-right: 9px;
+  }
+
+  .page-footer__next-travel-item {
+    padding-bottom: 9px;
+  }
+
+  .page-footer__contacts {
+    // position: relative;
+    // // display: flex;
+    // flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    // border-left: none;
+
+    &::before {
+      display: none;
+      // @include pseudo-clases;
+      // width: 1px;
+      // height: 177px;
+      // top: 0;
+      // left: 0;
+      // background-color: #d7d9df;
+    }
+  }
+
+  .page-footer__contacts-title {
+    // margin: 0;
+    // margin-bottom: 8px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 1px;
+  }
+
+  .page-footer__contacts a {
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // min-height: 44px;
+    // padding-left: 40px;
+    // color: $accent-main-color;
+    // text-decoration: underline;
+
+    &::before {
+      // @include pseudo-clases;
+    }
+  }
+
+  .page-footer__contacts-email {
+    // @include reset-link-style;
+    // letter-spacing: -1.1px;
+
+    &::before {
+      // top: 11px;
+      // left: -1px;
+      // width: 26px;
+      // height: 20px;
+      // background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  .page-footer__contacts-phone {
+    // @include reset-link-style;
+
+    &::before {
+      // top: 3px;
+      // left: -1px;
+      // width: 30px;
+      // height: 30px;
+      // background-image: url("../img/icon-small-black-phone.svg");
+      // opacity: 0.2;
+    }
+  }
+
+  .page-footer__corporate-travel {
+    // position: relative;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // width: 726px;
+    // margin-left: 25px;
+    // margin-top: 47px;
+    // padding-left: 0;
+    // border-left: none;
+
+    &::before {
+      // @include pseudo-clases;
+      // width: 726px;
+      // height: 1px;
+      // top: -30px;
+      // left: -4px;
+      // background-color: #d7d9df;
+    }
+  }
+
+  .page-footer__corporate-travel-title {
+    // margin: 0;
+    // margin-bottom: 20px;
+    // font-size: 18px;
+    // font-weight: 600;
+    // line-height: 32px;
+    // letter-spacing: 1px;
+  }
+
+  .page-footer__corporate-travel-description {
+    // margin: 0;
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 24px;
+    // letter-spacing: 0.9px;
+    // opacity: 0.5;
+    // text-align: center;
+  }
+
+  .page-footer__corporate-travel-description br {
+    // display: none;
+  }
+}
